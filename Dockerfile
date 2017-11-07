@@ -15,7 +15,7 @@ RUN apt-get clean && \
 # Install jmeter
 RUN   mkdir /jmeter \
 	&& cd /jmeter/ \
-	&& wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-2.13.tgz \
+	&& wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-3.3.tgz \
 	&& tar -xzf apache-jmeter-3.3.tgz \
 	&& rm apache-jmeter-3.3.tgz \
 	&& mkdir /jmeter-plugins \
