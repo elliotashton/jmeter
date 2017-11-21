@@ -1,6 +1,6 @@
 # Use Ubuntu
 FROM ubuntu
-MAINTAINER TestAutomationGuru
+MAINTAINER elliotashton based on work by TestAutomationGuru
 
 # Install wger & JRE
 RUN apt-get clean && \
@@ -10,7 +10,9 @@ RUN apt-get clean && \
 			default-jre-headless \
 			telnet \
 			iputils-ping \
-			unzip
+			unzip \
+			lighttpd \
+			jq
 
 # Install jmeter
 RUN   mkdir /jmeter \
