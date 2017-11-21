@@ -10,9 +10,7 @@ RUN apt-get clean && \
 			default-jre-headless \
 			telnet \
 			iputils-ping \
-			unzip \
-			lighttpd \
-			jq
+			unzip 
 
 # Install jmeter
 RUN   mkdir /jmeter \
